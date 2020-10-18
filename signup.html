@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>FoodShala</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logo.png" width="150px">
+        
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">Restaurant Menu</a>
+                            
+                        </li>
+                        <li><a href="signup.html">Sign Up</a></li>
+                        <li><a href="cart.html">Cart</a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="User ID" required>
+                <input type="Password" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="submit" class ="submit-btn">Log In</button>
+             </form>
+
+            <form id="register" class="input-group">
+                <input type="text" class="input-field" placeholder="User ID" required>
+                <input type="Email" class="input-field" placeholder="Email ID" required>
+                <input type="Password" class="input-field" placeholder="Create Password" required>
+                <input type="checkbox" class="check-box"><span>I agree to the terms and Conditions</span>
+                <button type="submit" class ="submit-btn">Register</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+        function register(){
+            x.style.left="-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+        function login(){
+            x.style.left="50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+
+    </script>
+</body>
+</html>
